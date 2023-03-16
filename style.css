@@ -1,0 +1,142 @@
+body {
+	font-family: Montserrat;
+	background-color: #F7D9C4;
+}
+
+header {
+	background-color: #FFEEDD;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+}
+
+#roulette-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	width: 100vh;
+}
+
+  
+  #roulette .pokemon:nth-child(4) {
+	position: relative;
+	z-index: 1;
+  }
+  
+  #roulette .pokemon:nth-child(4):after {
+	content: "";
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 20px solid transparent;
+	border-top: 30px solid #fff;
+  }
+
+#roulette {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 80%;
+	margin-top: 20px;
+}
+
+.pokemon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	height: 50%;
+	margin-bottom: 15px;
+	border: 2px solid black;
+}
+
+.centerImage {
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 70%;
+	background-position: center;
+	margin-bottom: 10px;
+}
+
+#GenNew {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: none;
+	background-color: #FFEEDD;
+	color: black;
+	text-transform: uppercase;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+#GenNew:hover {
+	background-color: #E6E6E6;
+	box-shadow: 0px 3px 3px rgba(0, 0.25);
+	transform: translateY(-2px);
+}
+
+#show-pokemon {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: none;
+	background-color: #FFEEDD;
+	color: black;
+	text-transform: uppercase;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+#show-pokemon:hover {
+	background-color: #E6E6E6;
+	box-shadow: 0px 3px 3px rgba(0, 0.25);
+	transform: translateY(-2px);
+}
+@media screen and (max-width: 768px) {
+	#roulette {
+		width: 100%;
+		height: 50%;
+	}
+
+	.pokemon {
+		width: 45%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.centerImage {
+		height: 60%;
+	}
+}
+
+#result-container {
+	font-size: 25px;
+	font-family: Montserrat;
+	font-weight: bold;
+}
+
